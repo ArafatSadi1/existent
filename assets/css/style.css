@@ -421,6 +421,10 @@ button {
   transition: 0.3s;
 }
 @media (max-width: 576px) {
+  .integrateBg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .integrate_title {
     max-width: 100%;
     font-size: 22px;
@@ -614,13 +618,13 @@ button {
   height: 44px;
 }
 
-.subscribe_input{
+.subscribe_input {
   background-color: var(--bg7);
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
-.subscribe_input:focus{
+.subscribe_input:focus {
   background-color: var(--bg7);
   color: var(--color1);
 }
@@ -634,16 +638,7 @@ button {
   transition: 0.3s;
 }
 
-/* responsive for mobile device */
-@media (max-width: 576px) {
-  .integrateBg {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 /* variable */
-
 :root {
   --color1: #fff;
   --color2: #1e2a39;
