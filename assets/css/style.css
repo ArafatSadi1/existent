@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Playfair+Display&display=swap");
 
 html {
   padding: 0px;
@@ -59,7 +59,6 @@ button {
 }
 .single_navItem_link:hover {
   color: var(--bg1);
-  font-weight: 600;
   transition: 0.3s;
 }
 .nav_btn_wrapper {
@@ -76,7 +75,7 @@ button {
 .navbar_btn {
   width: 190px;
   height: 58px;
-  border: 1px solid var(--color5);
+  border: 1px solid var(--color4);
   border-radius: 30px;
   color: var(--color2);
   background-color: var(--color1);
@@ -86,7 +85,7 @@ button {
 .navbar_btn:hover {
   background-color: var(--bg4);
   color: var(--bg5);
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  border: none;
   transition: 0.5s;
 }
 @media (max-width: 576px) {
@@ -130,13 +129,12 @@ button {
 }
 .yellow_button:hover {
   background-color: var(--bg6);
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 .header_demo_btn {
   width: 190px;
   height: 58px;
-  border: 1px solid var(--color5);
+  border: 1px solid var(--color4);
   border-radius: 30px;
   color: var(--color2);
   background-color: var(--color1);
@@ -147,7 +145,7 @@ button {
 .header_demo_btn:hover {
   background-color: var(--bg4);
   color: var(--bg5);
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  border: none;
   transition: 0.5s;
 }
 @media (max-width: 576px) {
@@ -425,7 +423,7 @@ button {
 }
 .card_communication {
   font-size: 14px;
-  color: var(--color8);
+  color: var(--color6);
 }
 .integrate_yellow_card {
   background-color: var(--bg3);
@@ -442,6 +440,8 @@ button {
 }
 .integrate_yellow_card_link {
   color: var(--color2);
+  font-size: 14px;
+  font-weight: 600;
 }
 .integrate_yellow_card_link:hover {
   text-decoration: underline;
@@ -459,8 +459,7 @@ button {
   font-weight: 600;
 }
 .get_started_black_btn:hover {
-  background-color: var(--color7);
-  box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.7);
+  background-color: var(--color5);
   transition: 0.3s;
 }
 @media (max-width: 576px) {
@@ -535,13 +534,18 @@ button {
   line-height: 46px;
   font-weight: 800;
 }
-.splide__slide {
-  margin: 30px;
+.review_card {
   background: var(--color1);
   border-radius: 6px;
 }
-.splide__slide.is-active {
-  margin: 20px 0;
+.review_start_wrapper{
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+.review_start{
+  width: 16px;
+  height: 16px;
 }
 .slide__content {
   font-size: 14px;
@@ -555,15 +559,12 @@ button {
   width: 12px;
   height: 12px;
   border: none;
-  margin: 15px 5px;
+  margin: 42px 12px 0 12px;
 }
 .splide__pagination__page.is-active {
   transform: scale(1.5);
   background: var(--bg1);
   border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  border: none;
 }
 .review_title {
   font-size: 20px;
@@ -588,7 +589,7 @@ button {
   font-weight: 700;
 }
 .reviewr_position {
-  color: var(--color8);
+  color: var(--color6);
   font-size: 12px;
   margin-top: 5px;
 }
@@ -618,13 +619,6 @@ button {
     max-width: 100%;
     font-size: 22px;
     line-height: 32px;
-  }
-  .splide__slide {
-    margin: 0;
-  }
-  .splide__slide.is-active {
-    box-shadow: none;
-    margin: 0;
   }
   .countdown_wrapper {
     margin-top: 40px;
@@ -666,7 +660,7 @@ button {
   font-weight: 800;
 }
 .footer_agency_address {
-  color: var(--color5);
+  color: var(--color4);
   font-size: 16px;
   line-height: 28px;
   margin-top: 18px;
@@ -691,9 +685,7 @@ button {
   transition: border-color 0.2s;
 }
 .form__field:focus {
-  font-size: 18px;
-  padding-bottom: 6px;
-  border-bottom: 3px solid var(--color5);
+  border-bottom: 2px solid var(--bg1);
 }
 .footer_subscribe_btn {
   margin-top: 28px;
@@ -707,7 +699,6 @@ button {
 }
 .footer_subscribe_btn:hover {
   background-color: var(--bg6);
-  box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.7);
   transition: 0.3s all ease-in-out;
 }
 .footer_agency_menu_txt {
@@ -718,11 +709,10 @@ button {
   margin-bottom: 30px;
 }
 .footer_link {
-  color: var(--color5);
+  color: var(--color4);
 }
 .footer_link:hover {
   color: var(--bg1);
-  font-weight: 500;
   transition: 0.3s all ease-in-out;
 }
 
@@ -731,12 +721,9 @@ button {
   --color1: #fff;
   --color2: #1e2a39;
   --color3: #696c74;
-  --color4: #404040;
-  --color5: #b6bcc5;
-  --color6: #525252;
-  --color7: #161615;
-  --color8: #8f8f8f;
-  --color9: #72777e;
+  --color4: #b6bcc5;
+  --color5: #161615;
+  --color6: #8f8f8f;
   --bg1: #ffa654;
   --bg2: #917aeb;
   --bg3: #fdda5f;
@@ -744,6 +731,4 @@ button {
   --bg5: #fff7f0;
   --bg6: #f78317;
   --bg7: #1f1a33;
-  --bg8: #fc6868;
-  --bg9: #ffc80a;
 }
