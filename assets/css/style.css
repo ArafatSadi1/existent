@@ -52,7 +52,7 @@ button {
   color: var(--color2);
 }
 .nav_link_wrapper {
-  gap: 40px;
+  gap: 30px;
 }
 .single_navItem_link {
   color: var(--color3);
@@ -62,6 +62,10 @@ button {
   font-weight: 600;
   transition: 0.3s;
 }
+.nav_btn_wrapper {
+  gap: 30px;
+  align-items: center;
+}
 .login_navlink {
   color: var(--color2);
   font-weight: 600;
@@ -70,12 +74,19 @@ button {
   color: var(--bg1);
 }
 .navbar_btn {
+  width: 190px;
+  height: 58px;
+  border: 1px solid var(--color5);
+  border-radius: 30px;
   color: var(--color2);
+  background-color: var(--color1);
+  font-size: 18px;
   font-weight: 600;
 }
 .navbar_btn:hover {
   background-color: var(--bg4);
   color: var(--bg5);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
   transition: 0.5s;
 }
 @media (max-width: 576px) {
@@ -98,27 +109,45 @@ button {
 }
 .header_text {
   max-width: 85%;
-  color: #696c74;
+  color: var(--color3);
   margin: 20px 0;
   font-size: 20px;
   line-height: 32px;
 }
+.header_btn_wrapper {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
 .yellow_button {
+  width: 190px;
+  height: 58px;
+  border: none;
+  border-radius: 30px;
   color: var(--color1);
   background-color: var(--bg1);
   font-weight: 600;
+  font-size: 18px;
 }
 .yellow_button:hover {
   background-color: var(--bg6);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 .header_demo_btn {
+  width: 190px;
+  height: 58px;
+  border: 1px solid var(--color5);
+  border-radius: 30px;
   color: var(--color2);
+  background-color: var(--color1);
   font-weight: 600;
+  font-size: 18px;
+  margin-left: 14px;
 }
 .header_demo_btn:hover {
   background-color: var(--bg4);
   color: var(--bg5);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.7);
   transition: 0.5s;
 }
 @media (max-width: 576px) {
@@ -139,14 +168,18 @@ button {
   border-radius: 12px;
 }
 .chat_card {
-  padding: 20px;
+  background-color: var(--color1);
+  padding: 28px;
   border-radius: 12px;
 }
-.chat_card_person_big_img {
-  margin-bottom: 20px;
+.chat_card_person_big_img_wrap {
+  margin-bottom: 28px;
+}
+.recent_chat_big_img{
+  height: 245px;
 }
 .recent_chat_gap {
-  gap: 45px;
+  gap: 28px;
 }
 .chat_address {
   width: 129px;
@@ -228,13 +261,17 @@ button {
 }
 @media (max-width: 576px) {
   .recent_chat_wrapper {
-    padding: 25px;
+    padding: 12px;
   }
   .chat_card {
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
   }
-  .chat_card_person_big_img {
+  .chat_card_person_big_img_wrap {
     margin-bottom: 10px;
+  }
+  .recent_chat_big_img{
+    height: 100%;
   }
   .chat_address {
     width: 50px;
@@ -258,7 +295,7 @@ button {
     margin-top: -15px;
   }
   .recent_chat_gap {
-    gap: 12px;
+    gap: 0px;
   }
   .recent_chat_title_wrapper {
     margin-top: -8px;
@@ -412,12 +449,18 @@ button {
 }
 .get_started_black_btn {
   margin-top: 55px;
+  width: 190px;
+  height: 58px;
+  border: none;
+  border-radius: 30px;
   color: var(--color1);
   background-color: var(--color2);
+  font-size: 18px;
   font-weight: 600;
 }
 .get_started_black_btn:hover {
-  background-color: var(--color5);
+  background-color: var(--color7);
+  box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.7);
   transition: 0.3s;
 }
 @media (max-width: 576px) {
@@ -554,8 +597,8 @@ button {
   font-weight: 600;
 }
 .see_more_love_link:hover {
-  color: var(--color2);
-  text-decoration: underline;
+  color: var(--bg6);
+  transition: .3s;
 }
 .countdown_wrapper {
   margin-top: 60px;
@@ -617,25 +660,70 @@ button {
   width: 40px;
   height: 44px;
 }
-
-.subscribe_input {
-  background-color: var(--bg7);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
-.subscribe_input:focus {
-  background-color: var(--bg7);
+.footer_agency_name {
   color: var(--color1);
+  font-size: 20px;
+  font-weight: 800;
+}
+.footer_agency_address {
+  color: var(--color5);
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 18px;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 270px;
+  border: 0;
+  border-bottom: 2px solid var(--color3);
+  outline: 0;
+  font-size: 16px;
+  color: var(--color1);
+  padding: 14px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field:focus {
+  font-size: 18px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--color5);
+}
+.footer_subscribe_btn {
+  margin-top: 28px;
+  font-size: 18px;
+  color: var(--color1);
+  background-color: var(--bg1);
+  width: 143px;
+  height: 58px;
+  border: none;
+  border-radius: 30px;
+}
+.footer_subscribe_btn:hover {
+  background-color: var(--bg6);
+  box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.7);
+  transition: 0.3s all ease-in-out;
+}
+.footer_agency_menu_txt {
+  color: var(--color1);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .footer_link {
-  color: var(--color3);
+  color: var(--color5);
 }
-
 .footer_link:hover {
-  color: #bababa;
+  color: var(--bg1);
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s all ease-in-out;
 }
 
 /* variable */
@@ -644,11 +732,11 @@ button {
   --color2: #1e2a39;
   --color3: #696c74;
   --color4: #404040;
-  --color5: #060606;
+  --color5: #b6bcc5;
   --color6: #525252;
   --color7: #161615;
   --color8: #8f8f8f;
-  --color9: #0e0d1a;
+  --color9: #72777e;
   --bg1: #ffa654;
   --bg2: #917aeb;
   --bg3: #fdda5f;
