@@ -101,7 +101,7 @@ button {
   }
 }
 
-.header_title_wrapper{
+.header_title_wrapper {
   margin: 100px 0px;
 }
 .header_title {
@@ -154,7 +154,7 @@ button {
   transition: 0.5s;
 }
 @media (max-width: 375px) {
-  .header_title_wrapper{
+  .header_title_wrapper {
     margin: 40px 0;
   }
   .header_title {
@@ -290,6 +290,9 @@ button {
     width: 100%;
     padding: 10px;
   }
+  .small_right_padding_remove {
+    padding-right: 0;
+  }
   .chat_card_person_big_img_wrap {
     margin-bottom: 10px;
   }
@@ -318,7 +321,7 @@ button {
     margin-top: -15px;
   }
   .recent_chat_title_wrapper {
-    margin-top: -4px;
+    margin-top: -2px;
     margin-bottom: 12px;
   }
   .recent_chat_title {
@@ -379,8 +382,6 @@ button {
     margin-bottom: 4px;
   }
 }
-
-
 
 .section_gap {
   margin-top: 170px;
@@ -488,8 +489,7 @@ button {
 }
 @media (max-width: 375px) {
   .integrateBg {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 35px 0px;
   }
   .integrate_title {
     max-width: 100%;
@@ -500,6 +500,10 @@ button {
     max-width: 100%;
     font-size: 14px;
     line-height: 24px;
+  }
+  .get_started_black_btn {
+    margin-top: 28px;
+    margin-bottom: 20px;
   }
 }
 
@@ -546,6 +550,9 @@ button {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 40px;
+  }
+  .how_it_works_card_holder{
+    padding: 0;
   }
 }
 .review_wrapper {
@@ -639,13 +646,16 @@ button {
   color: var(--color3);
 }
 @media (max-width: 375px) {
+  .review_wrapper {
+    padding: 55px 0px;
+  }
   .review_section_title {
     max-width: 100%;
     font-size: 22px;
     line-height: 32px;
   }
   .countdown_wrapper {
-    margin-top: 40px;
+    margin-top: 28px;
   }
 }
 .ready_to_start_title {
@@ -738,6 +748,15 @@ button {
 .footer_link:hover {
   color: var(--bg1);
   transition: 0.3s all ease-in-out;
+}
+@media (max-width: 375px) {
+  .footer_subscribe_btn {
+    width: 125px;
+    height: 50px;
+  }
+  .footer_all_menu_wrapper{
+    gap: 36px;
+  }
 }
 
 /* variable */
