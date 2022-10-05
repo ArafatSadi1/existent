@@ -88,15 +88,21 @@ button {
   border: none;
   transition: 0.5s;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .nav_link_wrapper {
     margin-top: 30px;
     gap: 10px;
   }
   .navbar_btn {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
     text-align: center;
-    margin-top: 10px;
   }
+}
+
+.header_title_wrapper{
+  margin: 100px 0px;
 }
 .header_title {
   font-size: 56px;
@@ -115,7 +121,6 @@ button {
 }
 .header_btn_wrapper {
   margin-top: 40px;
-  margin-bottom: 100px;
 }
 .yellow_button {
   width: 190px;
@@ -148,7 +153,10 @@ button {
   border: none;
   transition: 0.5s;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
+  .header_title_wrapper{
+    margin: 40px 0;
+  }
   .header_title {
     font-size: 32px;
     line-height: 42px;
@@ -158,12 +166,29 @@ button {
     font-size: 14px;
     line-height: 24px;
   }
+  .header_btn_wrapper {
+    margin-top: 30px;
+  }
+  .yellow_button {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .header_demo_btn {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
+  }
 }
+
 .recent_chat_wrapper {
   background-color: var(--bg2);
   margin-bottom: 100px;
   padding: 50px;
   border-radius: 12px;
+}
+.recent_chat_gap {
+  gap: 28px;
 }
 .chat_card {
   background-color: var(--color1);
@@ -173,11 +198,8 @@ button {
 .chat_card_person_big_img_wrap {
   margin-bottom: 28px;
 }
-.recent_chat_big_img{
+.recent_chat_big_img {
   height: 245px;
-}
-.recent_chat_gap {
-  gap: 28px;
 }
 .chat_address {
   width: 129px;
@@ -257,18 +279,21 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .recent_chat_wrapper {
-    padding: 12px;
+    padding: 10px;
+  }
+  .recent_chat_gap {
+    gap: 0px;
   }
   .chat_card {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
   }
   .chat_card_person_big_img_wrap {
     margin-bottom: 10px;
   }
-  .recent_chat_big_img{
+  .recent_chat_big_img {
     height: 100%;
   }
   .chat_address {
@@ -292,34 +317,30 @@ button {
     font-size: 3px;
     margin-top: -15px;
   }
-  .recent_chat_gap {
-    gap: 0px;
-  }
   .recent_chat_title_wrapper {
-    margin-top: -8px;
-    margin-bottom: -5px;
+    margin-top: -4px;
+    margin-bottom: 12px;
   }
   .recent_chat_title {
-    font-size: 16px;
+    font-size: 9px;
     font-weight: 600;
   }
   .dot1 {
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     background-color: #f78317;
     border-radius: 100%;
   }
   .dot2 {
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     background-color: #fdda5f;
     border-radius: 100%;
-    margin-left: 3px;
-    margin-right: 3px;
+    margin: 0 3px;
   }
   .dot3 {
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     background-color: #8fd4b8;
     border-radius: 100%;
   }
@@ -344,8 +365,9 @@ button {
     padding-left: 15px;
   }
   .recent_chat_videoIcon {
-    width: 25px;
-    padding-bottom: 24px;
+    width: 6px;
+    height: 3px;
+    margin-left: 25px;
   }
   .last_recent_chat_card {
     margin-bottom: -28px;
@@ -353,11 +375,13 @@ button {
   .divider {
     width: 100%;
     height: 0.5px;
-    background-color: #abaaaa96;
-    margin-top: -6px;
-    margin-bottom: -6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 }
+
+
+
 .section_gap {
   margin-top: 170px;
 }
@@ -376,7 +400,7 @@ button {
   background-color: var(--bg5);
   padding: 20px 60px;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .you_can_meet_title {
     font-size: 22px;
     line-height: 32px;
@@ -462,7 +486,7 @@ button {
   background-color: var(--color5);
   transition: 0.3s;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .integrateBg {
     padding-left: 10px;
     padding-right: 10px;
@@ -512,7 +536,7 @@ button {
   background-color: var(--bg1);
   border-radius: 12px;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .how_it_works_title {
     font-size: 22px;
     line-height: 32px;
@@ -538,12 +562,12 @@ button {
   background: var(--color1);
   border-radius: 6px;
 }
-.review_start_wrapper{
+.review_start_wrapper {
   display: flex;
   align-items: center;
-  gap: 5px; 
+  gap: 5px;
 }
-.review_start{
+.review_start {
   width: 16px;
   height: 16px;
 }
@@ -599,7 +623,7 @@ button {
 }
 .see_more_love_link:hover {
   color: var(--bg6);
-  transition: .3s;
+  transition: 0.3s;
 }
 .countdown_wrapper {
   margin-top: 60px;
@@ -614,7 +638,7 @@ button {
   font-size: 18px;
   color: var(--color3);
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .review_section_title {
     max-width: 100%;
     font-size: 22px;
@@ -636,7 +660,7 @@ button {
   margin-top: 20px;
   margin-bottom: 35px;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .ready_to_start_title {
     font-size: 22px;
     line-height: 32px;
