@@ -155,7 +155,7 @@ button {
     text-align: center;
   }
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
 }
 /* navbar section end */
 
@@ -256,13 +256,12 @@ button {
 /* Mobile */
 @media only screen and (max-width: 420px) {
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
 }
 /* header section end */
 /* recent chat section start */
 .recent_chat_wrapper {
   background-color: var(--bg2);
-  margin-bottom: 100px;
   padding: 50px;
   border-radius: 12px;
 }
@@ -283,7 +282,7 @@ button {
 .chat_address {
   width: 129px;
   height: 44px;
-  background-color: rgba(18, 18, 18, 0.397);
+  background-color: #1e2a3984;
   top: 12px;
   left: 12px;
   padding: 8px;
@@ -354,11 +353,236 @@ button {
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #abaaaa96;
+  background-color: #dcdee3;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 376px) {
+/* responsive css */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+  .recent_chat_wrapper {
+    padding: 30px;
+  }
+  .recent_chat_gap {
+    gap: 10px;
+  }
+  .chat_card {
+    padding: 20px;
+  }
+
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .recent_chat_wrapper {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .recent_chat_gap {
+    gap: 0px;
+  }
+  .chat_card {
+    padding: 15px;
+  }
+  .chat_card_person_big_img_wrap {
+    margin-bottom: 15px;
+  }
+  .recent_chat_big_img {
+    height: 175px;
+  }
+  .chat_address {
+    width: 100px;
+    height: 40px;
+    top: 8px;
+    left: 8px;
+    padding: 7px;
+    gap: 5px;
+  }
+  .chat_address_img {
+    width: 28px;
+    height: 28px;
+  }
+  .chat_person_name {
+    font-size: 9px;
+  }
+  .chatAddressText {
+    margin-top: 3px;
+    font-size: 6px;
+  }
+  .recent_chat_title_wrapper {
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+  .recent_chat_title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg1);
+    border-radius: 100%;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg3);
+    border-radius: 100%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .dot3 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg4);
+    border-radius: 100%;
+  }
+  .recent_chat-img {
+    width: 60px;
+    height: 60px;
+  }
+  .recent_chat_person_name {
+    color: var(--color2);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .recent_chat_person_address {
+    color: var(--color3);
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .recent_chat_time {
+    color: var(--color3);
+    font-size: 15px;
+  }
+  .recent_chat_videoIcon {
+    width: 18px;
+    height: 9px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #dcdee3;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .recent_chat_wrapper {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .recent_chat_gap {
+    gap: 10px;
+  }
+  .chat_card {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  .small_right_padding_remove {
+    padding-right: 0;
+  }
+  .chat_card_person_big_img_wrap {
+    margin-bottom: 15px;
+  }
+  .recent_chat_big_img {
+    height: 100%;
+  }
+  .chat_address {
+    width: 50px;
+    height: 20px;
+    top: 6px;
+    left: 6px;
+    padding: 3px;
+    gap: 3px;
+  }
+  .chat_address_img {
+    width: 15px;
+    height: 15px;
+  }
+  .chat_person_name {
+    font-size: 4px;
+    margin-bottom: 15px;
+  }
+  .chatAddressText {
+    font-size: 3px;
+    margin-top: -15px;
+  }
+  .recent_chat_title_wrapper {
+    margin-top: -2px;
+    margin-bottom: 16px;
+  }
+  .recent_chat_title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    background-color: var(--bg1);
+    border-radius: 100%;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    background-color: var(--bg3);
+    border-radius: 100%;
+    margin: 0 3px;
+  }
+  .dot3 {
+    width: 5px;
+    height: 5px;
+    background-color: var(--bg4);
+    border-radius: 100%;
+  }
+  .recent_chat_single {
+    gap: 5px;
+  }
+  .recent_chat-img {
+    width: 35px;
+    height: 35px;
+  }
+  .recent_chat_person_name {
+    font-size: 12px;
+    padding-top: 4px;
+  }
+  .recent_chat_person_address {
+    font-size: 9px;
+    margin-bottom: 2px;
+  }
+  .recent_chat_time {
+    font-size: 9px;
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .recent_chat_videoIcon {
+    width: 9px;
+    height: 5px;
+    margin-left: 25px;
+  }
+  .last_recent_chat_card {
+    margin-bottom: -28px;
+  }
+  .divider {
+    width: 100%;
+    height: 0.5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+}
+/* Mobile */
+@media only screen and (max-width: 420px) {
+}
+@media only screen and (max-width: 375px) {
   .recent_chat_wrapper {
     padding: 10px;
     border-radius: 4px;
@@ -383,7 +607,6 @@ button {
   .chat_address {
     width: 50px;
     height: 20px;
-    background-color: rgba(18, 18, 18, 0.397);
     top: 3px;
     left: 3px;
     padding: 3px;
@@ -412,20 +635,20 @@ button {
   .dot1 {
     width: 4px;
     height: 4px;
-    background-color: #f78317;
+    background-color: var(--bg1);
     border-radius: 100%;
   }
   .dot2 {
     width: 4px;
     height: 4px;
-    background-color: #fdda5f;
+    background-color: var(--bg3);
     border-radius: 100%;
     margin: 0 3px;
   }
   .dot3 {
     width: 4px;
     height: 4px;
-    background-color: #8fd4b8;
+    background-color: var(--bg4);
     border-radius: 100%;
   }
   .recent_chat_single {
@@ -482,7 +705,7 @@ button {
   background-color: var(--bg5);
   padding: 20px 60px;
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .you_can_meet_title {
     width: 95%;
     font-size: 22px;
@@ -571,7 +794,7 @@ button {
   background-color: var(--color5);
   transition: 0.3s;
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .integrateBg {
     padding: 35px 0px;
   }
@@ -640,7 +863,7 @@ button {
   background-color: var(--bg1);
   border-radius: 12px;
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .how_it_works_title {
     font-size: 22px;
     line-height: 32px;
@@ -751,7 +974,7 @@ button {
   font-size: 18px;
   color: var(--color3);
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .review_wrapper {
     padding: 55px 0px;
   }
@@ -776,7 +999,7 @@ button {
   margin-top: 20px;
   margin-bottom: 35px;
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .ready_to_start_title {
     font-size: 22px;
     line-height: 32px;
@@ -864,7 +1087,7 @@ button {
   color: var(--color8);
   padding: 20px 0;
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .footer_wrapper {
     padding-top: 55px;
   }
