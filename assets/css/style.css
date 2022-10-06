@@ -380,8 +380,8 @@ button {
   .divider {
     width: 100%;
     height: 0.5px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -507,6 +507,10 @@ button {
     margin-bottom: 40px;
   }
   .get_started_black_btn {
+    width: 122px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 14px;
     margin-top: 28px;
     margin-bottom: 20px;
   }
@@ -526,22 +530,32 @@ button {
   margin-bottom: 70px;
 }
 .how_it_works_card1 {
+  padding: 40px 0;
   background-color: var(--bg2);
   border-radius: 12px;
+}
+.how_it_works_card_img {
+  padding: 0 46px;
+}
+.how_it_works_card_title_wrap {
+  padding: 28px 28px 0 28px;
 }
 .how_it_works_card_title {
   font-size: 24px;
   font-weight: 700;
 }
 .how_it_works_card_text {
+  margin-top: 18px;
   font-size: 16px;
   line-height: 28px;
 }
 .how_it_works_card2 {
+  padding: 40px 0;
   background-color: var(--bg3);
   border-radius: 12px;
 }
 .how_it_works_card3 {
+  padding: 40px 0;
   background-color: var(--bg1);
   border-radius: 12px;
 }
@@ -558,6 +572,12 @@ button {
   }
   .how_it_works_card_holder {
     padding: 0;
+  }
+  .how_it_works_card_img {
+    padding: 0 30px;
+  }
+  .how_it_works_card_title_wrap {
+    padding: 28px 12px 0 12px;
   }
 }
 .review_wrapper {
@@ -751,7 +771,8 @@ button {
   color: var(--bg1);
   transition: 0.3s all ease-in-out;
 }
-.copy_right_text{
+.copy_right_text {
+  font-size: 14px;
   color: var(--color3);
   padding-bottom: 20px;
 }
@@ -766,9 +787,9 @@ button {
   .footer_all_menu_wrapper {
     gap: 36px;
   }
-  .copy_right_text{
+  .copy_right_text {
     padding: 27px 0;
-  }  
+  }
 }
 
 /* variable */
