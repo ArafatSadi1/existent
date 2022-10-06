@@ -51,6 +51,20 @@ button {
   font-weight: 800;
   color: var(--color2);
 }
+._toggler {
+  box-shadow: none !important;
+  border: none !important;
+}
+._toggler.collapsed .navbar-toggler-icon {
+  background-image: url("../image/header-r8-menu-ic.svg") !important;
+  transition: 0.1s all ease-in-out;
+  max-width: 18px;
+}
+._toggler .navbar-toggler-icon {
+  background-image: url("../image/header-r8-menu-cross.svg") !important;
+  transition: 0.1s all ease-in-out;
+  max-width: 18px;
+}
 .nav_link_wrapper {
   gap: 30px;
 }
@@ -92,6 +106,13 @@ button {
   .nav_link_wrapper {
     margin-top: 30px;
     gap: 10px;
+  }
+  .single_navItem_link {
+    text-align: center;
+  }
+  .nav_btn_wrapper{
+    gap: 15px;
+    margin-top: 8px;
   }
   .navbar_btn {
     width: 125px;
