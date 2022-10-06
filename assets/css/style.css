@@ -41,7 +41,7 @@ a,
 button {
   transition: 0.3s all ease;
 }
-
+/* navbar section start */
 .nav_logo {
   width: 40px;
   height: 44px;
@@ -102,7 +102,15 @@ button {
   border: none;
   transition: 0.5s;
 }
-@media (max-width: 376px) {
+/* responsive css */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
   .nav_link_wrapper {
     margin-top: 30px;
     gap: 10px;
@@ -121,7 +129,37 @@ button {
     text-align: center;
   }
 }
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+}
+/* Mobile */
+@media only screen and (max-width: 420px) {
+  .nav_link_wrapper {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .single_navItem_link {
+    text-align: center;
+  }
+  .nav_btn_wrapper {
+    gap: 15px;
+    margin-top: 8px;
+  }
+  .navbar_btn {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+}
+/* navbar section end */
 
+/* header section start */
 .header_title_wrapper {
   margin: 100px 0px;
 }
@@ -174,7 +212,18 @@ button {
   border: none;
   transition: 0.5s;
 }
-@media (max-width: 376px) {
+/* responsive css */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
   .header_title_wrapper {
     margin: 40px 0;
   }
@@ -201,7 +250,16 @@ button {
     font-size: 14px;
   }
 }
-
+/* Mobile */
+@media only screen and (max-width: 575px) {
+}
+/* Mobile */
+@media only screen and (max-width: 420px) {
+}
+@media (max-width: 376px) {
+}
+/* header section end */
+/* recent chat section start */
 .recent_chat_wrapper {
   background-color: var(--bg2);
   margin-bottom: 100px;
@@ -558,9 +616,10 @@ button {
 }
 .how_it_works_card_img {
   padding: 0 46px;
+  object-fit: cover;
 }
 .how_it_works_card_title_wrap {
-  padding: 28px 28px 0 28px;
+  padding: 28px 26px 0 26px;
 }
 .how_it_works_card_title {
   font-size: 24px;
